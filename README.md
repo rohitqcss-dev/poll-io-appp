@@ -111,6 +111,23 @@ npm run dev
 
 ---
 
+
+# Poll.io - Full Stack Voting Application
+
+## Project Screenshots
+
+### 1. Create Poll Form
+![Create Poll](./screenshots/create-poll.png)
+
+### 2. Success Message After Creation
+![Success](./screenshots/created-sucessfully.png)
+
+### 3. Voting Process and Logic
+![Voting](./screenshots/poll-voting-process.png)
+
+### 4. Poll Expiry Identification
+![Expiry](./screenshots/expiry-poll.png)
+
 ## Author
 
 Project by rohit thakur

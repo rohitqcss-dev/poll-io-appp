@@ -69,9 +69,7 @@ function App() {
           <div className="h-10 w-10 rounded-2xl bg-[linear-gradient(135deg,#2563eb,#38bdf8)] shadow-lg shadow-blue-200/80" />
           <h1 className="text-3xl font-black tracking-tighter italic text-slate-900 transition-colors hover:text-blue-600">POLL.IO</h1>
         </div>
-        <div className="hidden md:flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
-          Live • Fast • Clean
-        </div>
+       
       </div>
 
       <div className="max-w-3xl mx-auto space-y-10">
@@ -103,6 +101,7 @@ function App() {
             <button key={t} onClick={() => setFilter(t)} className={`px-6 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${filter === t ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-400 hover:text-slate-600'}`}>{t}</button>
           ))}
         </div>
+
 
         <div className="space-y-6 pb-20">
           {polls
