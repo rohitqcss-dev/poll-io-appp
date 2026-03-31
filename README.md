@@ -1,4 +1,4 @@
-# Poll App Fullstack (Dupleit Backend + Polls Frontend)
+# Poll App Fullstack (Polls Backend + Polls Frontend)
 
 Ye repo ek simple **Poll/Voting app** ka fullstack setup hai.  
 Backend: Node.js + Express + MongoDB  
@@ -8,7 +8,7 @@ Frontend: React (Vite) + Axios + TailwindCSS
 
 ## Project Structure
 
-- `Dupleit backend/backend` = API server (Express + MongoDB)
+- `polls-backend/backend` = API server (Express + MongoDB)
 - `polls-Frontend/frontend` = React UI (Vite)
 
 ---
@@ -22,9 +22,9 @@ Frontend: React (Vite) + Axios + TailwindCSS
 
 ---
 
-## Backend Setup (Dupleit backend)
+## Backend Setup (polls-backend)
 
-**Folder:** `Dupleit backend/backend`
+**Folder:** `polls-backend/backend`
 
 1. Install dependencies:
 ```bash
@@ -89,7 +89,7 @@ npm run dev
 ## How to Run (Quick Start)
 
 1. Backend start karo:
-   - `Dupleit backend/backend`
+   - `polls-backend/backend`
    - `npm install`
    - `.env` me `MONGO_URL` add karo
    - `npm run dev`
