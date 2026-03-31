@@ -1,6 +1,6 @@
 # Poll App Fullstack (Polls Backend + Polls Frontend)
 
-Ye repo ek simple **Poll/Voting app** ka fullstack setup hai.  
+This repo contains a simple **Poll/Voting app** fullstack setup.  
 Backend: Node.js + Express + MongoDB  
 Frontend: React (Vite) + Axios + TailwindCSS
 
@@ -15,10 +15,10 @@ Frontend: React (Vite) + Axios + TailwindCSS
 
 ## Features
 
-- Poll create karna (question + options)
-- Vote karna (per poll ek baar)
-- Active/Expired polls ka view
-- Poll expiry time set karna (minutes)
+- Create polls (question + options)
+- Vote once per poll
+- View active/expired polls
+- Set poll expiry time (minutes)
 
 ---
 
@@ -31,12 +31,12 @@ Frontend: React (Vite) + Axios + TailwindCSS
 npm install
 ```
 
-2. `.env` file banao (same folder me):
+2. Create a `.env` file (in the same folder):
 ```
 MONGO_URL=your_mongodb_connection_string
 ```
 
-3. Server run karo:
+3. Run the server:
 ```bash
 npm run dev
 ```
@@ -49,7 +49,7 @@ npm run dev
   Body: `{ question, options: [..], expiresAt }`
 
 - `GET /poll/getpolls`  
-  All polls fetch karta hai
+  Fetch all polls
 
 - `POST /poll/votepoll/:id`  
   Body: `{ optionIndex }`
@@ -71,7 +71,7 @@ npm run dev
 npm install
 ```
 
-2. Run dev server:
+2. Run the dev server:
 ```bash
 npm run dev
 ```
@@ -81,25 +81,25 @@ npm run dev
 ### Frontend Notes
 
 - Axios base URL: `http://localhost:8000`
-- Vote state `localStorage` me store hota hai (`votedPolls`)
-- Poll expiry time minutes me set hota hai
+- Vote state is stored in `localStorage` (`votedPolls`)
+- Poll expiry time is set in minutes
 
 ---
 
 ## How to Run (Quick Start)
 
-1. Backend start karo:
+1. Start backend:
    - `polls-backend/backend`
    - `npm install`
-   - `.env` me `MONGO_URL` add karo
+   - Add `MONGO_URL` in `.env`
    - `npm run dev`
 
-2. Frontend start karo:
+2. Start frontend:
    - `polls-Frontend/frontend`
    - `npm install`
    - `npm run dev`
 
-3. Browser me open:
+3. Open in browser:
    - `http://localhost:5173`
 
 ---
